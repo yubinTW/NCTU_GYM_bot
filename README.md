@@ -31,6 +31,6 @@ $ pipenv run python3 ./app/main.py
 ## Run with docker
 ```
 cd NCTU_GYM_bot
-docker build -t NCTU_GYM_bot .
-docker run --name NCTU_GYM_bot -d NCTU_GYM_bot
+docker build -t nctu_gym_bot .
+docker run --name nctu_gym_bot -d nctu_gym_bot
 ```
