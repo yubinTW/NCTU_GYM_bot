@@ -30,7 +30,7 @@ $ pipenv run python3 ./app/main.py
 
 ## Run with docker
 ```
-cd TTR06_bot
-docker build -t team6-server .
-docker run --name team6-server -d team6-server
+cd NCTU_GYM_bot
+docker build -t NCTU_GYM_bot .
+docker run --name NCTU_GYM_bot -d NCTU_GYM_bot
 ```
