@@ -15,7 +15,7 @@ $ pip install pipenv
 $ pipenv install
 ```
 
-### set token
+### Set Token
 ```
 cp config.json.sample config.json
 vim config.json
