@@ -12,17 +12,13 @@ with open('config.json') as config_file:
 
 def message_handler(bot, update):
     message = update.message.text
-
     if message[0] == '/':
         return
-    
     print('User {} type in: {}'.format(update.message.from_user.first_name, message))
-    result = "yo"
     update.message.reply_markdown(result)
 
 
 def get_count(bot, update):
-    print('get_count')
     url = "https://swimpool.nctu.edu.tw/NCTUGym/index.php/crowd/GetGymCrowd"
     r = requests.get(url)
     data = json.loads(r.text)
