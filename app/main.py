@@ -23,7 +23,7 @@ def get_count(bot, update):
     r = requests.get(url)
     data = json.loads(r.text)
     result = "游泳館健身房人數: {},\n最後更新時間: {}".format(data['crowd'], data['time'])
-    if int(data['crowd']) == 45:
+    if int(data['crowd']) >= 45:
         url = 'https://swimpool.nctu.edu.tw/NCTUGym/index.php/crowd/GetGymLineCrowd'
         r = requests.get(url)
         data = json.loads(r.text)
